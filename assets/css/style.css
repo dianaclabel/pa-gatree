@@ -2,9 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
+  box-sizing: border-box;
   /* Eliminando los espacios predeterminados del navegador */
   margin: 0;
   padding: 0;
+}
+
+:root{
+  /*colores*/
+  --color-principal: #79B823;
+  --color-secundario: #123316;
+  --color-terciario: #717171;
+  /*fuente*/
+  --fuente-principal: 'Poppins', sans-serif;
 }
 
 #cabecera{
@@ -20,7 +30,7 @@
   
 .logo {
   /* Estilo del logo */
-  background-color:#79B823 ;
+  background-color:var(--color-principal) ;
   padding: 20px;
   width: 20%;
 }
@@ -36,11 +46,11 @@
   padding: 10px;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  color: #123316;
+  color: var(--color-secundario);
 }
 .nav li a {
   text-decoration: none;
-  color: #123316;
+  color: var(--color-secundario);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -48,15 +58,16 @@
   width: 30px;
   height: 30px;
   padding: 0 10px;
-  border-right: 1px solid #79B823;
+  border-right: 1px solid var(--color-principal);;
 }
 
 .img-fluid {
   width: 100%;
   height: auto;
+  display: block;;
 }
 .btn-nav{
-  background-color: #79B823;
+  background-color: var(--color-principal);;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -76,7 +87,7 @@
 
 .banner-content{
   width: 50%;
-  background-color: #123316;
+  background-color: var(--color-secundario);
   opacity: 0.9;
 }
 
@@ -105,18 +116,18 @@
 .btn-banner{
   margin-top: 20px;
   background-color:transparent;
-  color: #79B823;
+  color: var(--color-principal);;
   padding:  20px 30px;
   border-radius: 0px 25px 25px 25px;
   font-family: 'Poppins', sans-serif;
   font-size: 23px;
   text-decoration: none;
-  border: 2px solid #79B823;
+  border: 2px solid var(--color-principal);;
 }
 
 /*sección working-process*/
 .title{
-  color: #123316;
+  color: var(--color-secundario);
   padding: 0 50px 0 50px;
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
@@ -124,7 +135,7 @@
 }
 
 .subtitle{
-  color: #79B823;
+  color: var(--color-principal);;
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -147,7 +158,7 @@
 
 .box-img-item{
   border-radius: 50%;
-  border: 3px dotted #79B823;
+  border: 3px dotted var(--color-principal);;
   width: 80px;
   padding: 20px;
   display: flex;
@@ -158,14 +169,14 @@
 }
 
 .title-working-item{
-  color: #123316;
+  color: var(--color-secundario);
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
 .parrafo-working-item{
-  color: #717171;
+  color: var(--color-terciario);
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -174,17 +185,214 @@
 
 /*Estilos para la sección about us*/
 
-#about{
+#about, #our-benefits, #our-projects{
   display: flex;
+  margin: 20px 0;
+
+}
+
+.container-about{
+  background-color: var(--color-secundario);
+  background: url("../img/garden-about.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+
+}
+
+.about-texto{
+  color: var(--color-secundario);
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  padding: 0 60px;
+}
+
+.box-img-about{
+  border: 5px solid var(--color-principal);;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  margin: 80px auto ;
+
+  
+}
+
+.img-about{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.parrafo-about-texto{
+  margin: 30px 0;
+  color: var(--color-secundario);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.texto-about-texto{
+  color: var(--color-terciario);
+  margin-bottom: 20px;
+
+}
+
+.container-highlights{
+  --gap-col: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px var(--gap-col);
+  max-width: 60%;
+  margin: auto;
 }
 
 
+.highlights-item{
+  flex-basis: calc(50% - var(--gap-col)/2);
+  min-width: 0;
+  border: var(--color-principal) 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 600;
+  color: var(--color-secundario);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+/*Estilos para la sección de Our benefits*/
 
+.container-benefits{
+  background-color: var(--color-secundario);
+  background-color: #e6efd9;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2379b823' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.box-img-benefits{
+  width: 700px;
+  border: 6px solid var(--color-principal);;
+}
 
+.container-btns{
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
 
+.btn-about{
+  background-color: var(--color-principal);;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
 
+.btn-second{
+  background-color: #fff;
+  color:var(--color-principal); ;
+  border: 2px solid var(--color-principal);;
+}
 
+.texto-item-about{
+  font-weight: 400;
+  color: var(--color-terciario);
+  margin-top: 10px;
 
+}
+
+.btn-benefits{
+  background-color: var(--color-principal);;
+  color: white;
+  
+}
+
+/* Estilos para la sección de nuestros servicios*/
+
+.container-services{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 80px;
+  padding: 50px 0;
+  
+}
+
+.box-service-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+.services-item{
+border: var(--color-secundario) 1px solid;
+border-radius: 10px ;
+margin: 20px;
+padding-bottom: 20px;
+background-color: #fff;
+text-align: center;
+}
+
+.img-service{
+  border-radius: 10px 10px 0px 0px;
+}
+
+.title-service-item{
+  color: var(--color-secundario);
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+#services{
+  background-color: var(--color-secundario);
+  background-image: url("../img/garden-about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box-services{
+  background-color: var(--color-secundario);
+  opacity: 0.9;
+}
+
+.title-service{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+/*sección de nuestros proyectos*/
+.box-projects{
+  background-color: #fff;
+}
+
+.title-our-projects{
+  color: var(--color-secundario);
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+.projects-item{
+  box-shadow: 0px 0px 10px var(--color-terciario);
+  border: none;
+}
 

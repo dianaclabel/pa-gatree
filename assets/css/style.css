@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  /* Eliminando los espacios predeterminados del navegador */
+  margin: 0;
+  padding: 0;
+}
+
+#cabecera{
+  width: 100%;
+  margin: 0px auto;
+  padding: 0 30px;;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
+  
+.logo {
+  /* Estilo del logo */
+  background-color:#79B823 ;
+  padding: 20px;
+  width: 20%;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.nav li {
+  list-style: none;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #123316;
+}
+.nav li a {
+  text-decoration: none;
+  color: #123316;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav .search {
+  width: 30px;
+  height: 30px;
+  padding: 0 10px;
+  border-right: 1px solid #79B823;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+.btn-nav{
+  background-color: #79B823;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+
+#banner{
+  background-image: url("../img/img-hero.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  max-height: 700px; 
+}
+
+.banner-content{
+  width: 50%;
+  background-color: #123316;
+  opacity: 0.9;
+}
+
+.banner-texto{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  padding: 120px;
+  text-align: left;
+
+}
+
+.banner-texto h3{
+  font-size: 28px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.banner-texto h1{
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+.btn-banner{
+  margin-top: 20px;
+  background-color:transparent;
+  color: #79B823;
+  padding:  20px 30px;
+  border-radius: 0px 25px 25px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  text-decoration: none;
+  border: 2px solid #79B823;
+}
+
+/*sección working-process*/
+.title{
+  color: #123316;
+  padding: 0 50px 0 50px;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.subtitle{
+  color: #79B823;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container-working-process{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.working-process-item{
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+}
+
+.box-img-item{
+  border-radius: 50%;
+  border: 3px dotted #79B823;
+  width: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.title-working-item{
+  color: #123316;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.parrafo-working-item{
+  color: #717171;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+}
+
+/*Estilos para la sección about us*/
+
+#about{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -7,26 +7,69 @@
   <title>Gatree</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!-- Enlazar el HTML con la biblioteca de fontawesomw -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Enlazar el HTML con favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
+  <header id="top-bar">
+    <div class="container">
+      <div class="container-topbar">
+        <!-- para lo elementos de contactos -->
+        <div class="icons-contact">
+          <a class="row-topbar-link " href="tel:5114724533" target="_blank"><i
+              class="fa-solid  fa-phone space-icons color-icon"></i>(01) 4724533</a>
+          <a class="row-topbar-link" href="mailto:contacto@multivision.pe" target="_blank"><i
+              class="fa-solid fa-envelope space-icons color-icon"></i>contacto@multivision.pe</a>
+          <a class="row-topbar-link" href="" target="_blank"><i
+              class="fa-solid fa-location-dot color-icon"></i>Miraflores -
+            Lima</a>
+        </div>
+
+        <!-- para os elementos de las redes sociales -->
+        <div class="icons-socia-media">
+          <p> Follow us</p>
+          <a class="row-topbar-link" href="https://www.facebook.com/" target="_blank" title="siguenos en Facebook"><i
+              class="fa-brands fa-facebook row-topbar-icons size-icon"></i></a class="row-topbar-link">
+          <a class="row-topbar-link" href="https://www.youtube.com/" target="_blank" title="siguenos en Youtube"><i
+              class="fa-brands fa-youtube row-topbar-icons size-icon"></i></a class="row-topbar-link">
+          <a class="row-topbar-link" href="https://www.instagram.com/" target="_blank" title="siguenos en Instagram"><i
+              class="fa-brands fa-instagram row-topbar-icons  size-icon"></i></a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </header>
   <!--Cabecera-->
-  <header id="cabecera">
-    <div class="container-header">
+  <header id="cabecera" class="fijar-cabecera header-box">
+    <div class="container-header container">
       <div class="logo">
-        <img src="./assets/img/logo-gatree.svg" alt="logo-gatree" class="img-fluid">
+        <a href="index.html">
+          <img src="./assets/img/logo-gatree.svg" alt="logo-gatree" class="img-fluid">
+        </a>
       </div>
       <ul class="nav">
-        <li><a href="#home">Home+</a></li>
+        <li><a href="index.html">Home+</a></li>
         <li><a href="#about">About+</a></li>
         <li><a href="#services">Services+</a></li>
         <li><a href="#contact">Projects+</a></li>
-        <li><a href="#contact">Blog+</a></li>
-        <li><a href="#contact">Contact+</a></li>
-        <li><a href="#contact">pages+</a></li>
+        <li><a href="#">Blog+</a></li>
+        <li><a href="#">Contact+</a></li>
+        <li><a href="#">pages+</a></li>
         <li>
           <div class="search">
-            <img src="assets/img/busqueda.png" alt="lupa" class="img-fluid">
+            <i class="fa-solid fa-magnifying-glass icons-contact .serch-icon"></i>
+            <!-- <img src="assets/img/busqueda.png" alt="lupa" class="img-fluid"> -->
           </div>
         </li>
         <li>
@@ -51,44 +94,49 @@
     </section>
     <!--Sección "Como trabajamos"-->
     <section id="working-process">
-      <h3 class="subtitle">
-        <img src="assets/img/clip.png" alt="clip">
-        Working Process
-      </h3>
-      <h2 class="title">How Does We Work</h2>
-      <div class="container-working-process">
-        <div class="working-process-item">
-          <div class="box-img-item"> <img src="/assets/img/garden-1.png" alt="" class="img-fluid"></div>
-          <h3 class="title-working-item">Garden Watering</h3>
-          <p class="parrafo-working-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae
-            voluptatibus quo ratione, veritatis
-            ducimus libero totam sit laudantium cum possimus, non aliquid, reiciendis quas a. Exercitationem aliquam
-            tenetur maiores?
-          </p>
-        </div>
-        <div class="working-process-item">
-          <div class="box-img-item"> <img src="/assets/img/garden-2.png" alt="" class="img-fluid"></div>
-          <h3 class="title-working-item">Garden Watering</h3>
-          <p class="parrafo-working-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae
-            voluptatibus quo ratione, veritatis
-            ducimus libero totam sit laudantium cum possimus, non aliquid, reiciendis quas a. Exercitationem aliquam
-            tenetur maiores?
-          </p>
-        </div>
-        <div class="working-process-item">
-          <div class="box-img-item"> <img src="/assets/img/garden-3.png" alt="" class="img-fluid"></div>
-          <h3 class="title-working-item">Garden Watering</h3>
-          <p class="parrafo-working-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae
-            voluptatibus quo ratione, veritatis
-            ducimus libero totam sit laudantium cum possimus, non aliquid, reiciendis quas a. Exercitationem aliquam
-            tenetur maiores?
-          </p>
+      <div class="container">
+        <h3 class="subtitle">
+          <img src="assets/img/clip.png" alt="clip">
+          Working Process
+        </h3>
+        <h2 class="title">How Does We Work</h2>
+        <div class="container-working-process">
+          <div class="working-process-item">
+            <div class="box-img-item"> <img src="/assets/img/garden-1.png" alt="" class="img-fluid"></div>
+            <h3 class="title-working-item">Garden Watering</h3>
+            <p class="parrafo-working-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae
+              voluptatibus quo ratione, veritatis
+              ducimus libero totam sit laudantium cum possimus, non aliquid, reiciendis quas a. Exercitationem aliquam
+              tenetur maiores?
+            </p>
+          </div>
+          <div class="working-process-item">
+            <div class="box-img-item"> <img src="/assets/img/garden-2.png" alt="" class="img-fluid"></div>
+            <h3 class="title-working-item">Garden Watering</h3>
+            <p class="parrafo-working-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae
+              voluptatibus quo ratione, veritatis
+              ducimus libero totam sit laudantium cum possimus, non aliquid, reiciendis quas a. Exercitationem aliquam
+              tenetur maiores?
+            </p>
+          </div>
+          <div class="working-process-item">
+            <div class="box-img-item"> <img src="/assets/img/garden-3.png" alt="" class="img-fluid"></div>
+            <h3 class="title-working-item">Garden Watering</h3>
+            <p class="parrafo-working-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae
+              voluptatibus quo ratione, veritatis
+              ducimus libero totam sit laudantium cum possimus, non aliquid, reiciendis quas a. Exercitationem aliquam
+              tenetur maiores?
+            </p>
+          </div>
         </div>
       </div>
+
 
     </section>
     <!--Sección "About"-->
     <section id="about">
+      <div class="container">
+      </div>
       <div class="container-about">
         <div class="box-img-about">
           <img src="./assets/img/img-about.jpg" alt="" class="img-fluid img-about">
@@ -135,7 +183,7 @@
     </section>
     <!--Sección "Servicios"-->
     <section id="services">
-      <div class="box-services">
+      <div class="box-services ">
         <h3 class="subtitle"> <img src="assets/img/clip.png" alt="clip">Our Services</h3>
         <h1 class="title-service">Our Amazing Service</h1>
         <div class="container-services">
@@ -309,6 +357,11 @@
       <p>© 2025 Gatree- By Diana Clabel</p>
     </div>
     <footer />
+
+    <!-- scroll up button -->
+    <a href="#" class="scroll-up">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
 
 </body>
 

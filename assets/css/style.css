@@ -23,17 +23,77 @@ a {
   --fuente-principal: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #cabecera{
   width: 100%;
   margin: 0px auto;
-  padding: 0 30px;;
 }
 
+#top-bar{
+  background-color: var(--color-secundario);
+  color: var(--color-fuente);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
 .container-header {
   display: flex;
   align-items: center;
+  background-color: var(--color-fuente);
 }
-  
+
+/*Ëstilos para topbar*/
+.container-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  font-family: var(--fuente-principal);
+}
+
+.row-topbar-link{
+  color: var(--color-fuente);
+  text-decoration: none;
+  /* margin-right:10px; */
+}
+
+.icons-contact{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  gap: 30px;
+}
+
+.icons-socia-media
+{
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  gap: 30px;
+}
+
+.color-icon{
+  color: var(--color-principal);
+  margin: 10px;
+  font-size: 15px;
+}
+
+.size-icon{
+  font-size: 18px;
+}
+/*Estilos para el header*/
+
+.header-box{
+  background-color: var(--color-fuente);
+}
 .logo {
   /* Estilo del logo */
   background-color:var(--color-principal) ;
@@ -61,11 +121,11 @@ a {
 }
 
 .nav .search {
-  width: 30px;
-  height: 30px;
-  padding: 0 10px;
-  border-right: 1px solid var(--color-principal);;
+  border-right: 1px solid var(--color-principal);
+  padding-inline: 20px;
+  
 }
+
 
 .img-fluid {
   width: 100%;
@@ -83,6 +143,13 @@ a {
   border: none;
 }
 
+.fijar-cabecera{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+/*Estilos para el banner*/
+
 #banner{
   background-image: url("../img/img-hero.jpg");
   background-size: cover;
@@ -90,6 +157,7 @@ a {
   background-repeat: no-repeat;
   max-height: 700px; 
 }
+
 
 .banner-content{
   width: 50%;
@@ -493,3 +561,18 @@ text-align: center;
   padding: 30px 0 0 0;
 }
 
+/* Estilos para el botón de scroll hacia arriba */
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background-color: var(--color-principal);
+  color: var(--color-fuente);
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}

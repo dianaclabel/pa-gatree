@@ -456,7 +456,7 @@ text-align: center;
   background-color: var(--color-fuente);
 }
 
-.title-our-projects{
+.title-our-projects, .title-our-team{
   color: var(--color-secundario);
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
@@ -575,4 +575,75 @@ text-align: center;
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
+}
+/* Estilos para sección our-team*/
+.box-team{
+  padding-bottom: 50px;
+}
+
+.container-team{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.col{
+  flex-basis: 0;
+  flex-grow: 1;
+
+}
+
+.col-20{
+            flex-basis: 20%;
+            max-width: 20%;
+        }
+.col-25{
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+
+.col-33{
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+        }
+.team-items{
+  background-color: var(--color-fuente);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px var(--color-terciario);
+  position: relative;
+}
+.title-team-item{
+  color: var(--color-principal);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.name-team{
+  color: var(--color-secundario);
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.btn-share{
+  background-color: var(--color-principal);
+  width: 30px;
+  height: 32px;
+  text-align: center;
+  padding-top: 5px;
+  color: var(--color-fuente);
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  left:70%;
+  bottom: 80px;
 }

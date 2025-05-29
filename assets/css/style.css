@@ -17,6 +17,8 @@ a {
   --color-principal: #79B823;
   --color-secundario: #123316;
   --color-terciario: #717171;
+  --color-fuente: #fff;
+
   /*fuente*/
   --fuente-principal: 'Poppins', sans-serif;
 }
@@ -72,7 +74,7 @@ a {
 }
 .btn-nav{
   background-color: var(--color-principal);;
-  color: white;
+  color: var(--color-fuente);
   padding: 10px 20px;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
@@ -96,7 +98,7 @@ a {
 }
 
 .banner-texto{
-  color: white;
+  color: var(--color-fuente);
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
   padding: 120px;
@@ -292,7 +294,7 @@ a {
 
 .btn-about{
   background-color: var(--color-principal);;
-  color: white;
+  color: var(--color-fuente);
   padding: 20px 30px;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
@@ -302,7 +304,7 @@ a {
 }
 
 .btn-second{
-  background-color: #fff;
+  background-color: var(--color-fuente);
   color:var(--color-principal); ;
   border: 2px solid var(--color-principal);;
 }
@@ -316,7 +318,7 @@ a {
 
 .btn-benefits{
   background-color: var(--color-principal);;
-  color: white;
+  color: var(--color-fuente);
   
 }
 
@@ -344,7 +346,7 @@ border: var(--color-secundario) 1px solid;
 border-radius: 10px ;
 margin: 20px;
 padding-bottom: 20px;
-background-color: #fff;
+background-color: var(--color-fuente);
 text-align: center;
 }
 
@@ -375,7 +377,7 @@ text-align: center;
 }
 
 .title-service{
-  color: #fff;
+  color: var(--color-fuente);
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: 700;
@@ -383,7 +385,7 @@ text-align: center;
 }
 /*sección de nuestros proyectos*/
 .box-projects{
-  background-color: #fff;
+  background-color: var(--color-fuente);
 }
 
 .title-our-projects{
@@ -403,7 +405,7 @@ text-align: center;
 /*Estilos para el footer*/
 #footer {
   background-color: #123316;
-  color: #fff;
+  color: var(--color-fuente);
   padding: 50px 20px;
   font-family: var(--fuente-principal);
 }
@@ -425,7 +427,7 @@ text-align: center;
   font-size:80px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--color-fuente);
 }
 
 .footer-column p{
@@ -470,7 +472,7 @@ text-align: center;
 
 .footer-column form button {
   background-color: var(--color-principal);
-  color: #fff;
+  color: var(--color-fuente);
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -487,7 +489,7 @@ text-align: center;
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #fff;
+  color: var(--color-fuente);
   padding: 30px 0 0 0;
 }
 

@@ -108,7 +108,7 @@ div .subtitle-follow-top{
   /* Estilo del logo */
   background-color:var(--color-principal) ;
   padding: 20px;
-  width: 20%;
+  width: 160px;
 }
 .nav{
   display: flex;
@@ -134,6 +134,10 @@ div .subtitle-follow-top{
   border-right: 1px solid var(--color-principal);
   padding-inline: 20px;
   
+}
+
+.menu-burger{
+  display: none;
 }
 
 
@@ -337,7 +341,7 @@ div .subtitle-follow-top{
   min-width: 0;
   border: var(--color-principal) 1px solid;
   border-radius: 10px;
-  padding: 20px;
+  padding: 16px;
   font-weight: 600;
   color: var(--color-secundario);
   display: flex;
@@ -345,8 +349,16 @@ div .subtitle-follow-top{
   gap: 10px;
 }
 
+
 /*Estilos para la sección de Our benefits*/
 
+.title-our-benefits{
+  color: var(--color-secundario);
+  padding: 0 50px 0 50px;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
 .container-benefits{
   background-color: var(--color-secundario);
   background-color: #e6efd9;
@@ -481,6 +493,8 @@ text-align: center;
 
 /* Estilos para el botón de scroll hacia arriba */
 .scroll-up {
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -493,7 +507,15 @@ text-align: center;
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
+
+
 /* Estilos para sección our-team*/
 .box-team{
   padding-bottom: 50px;
@@ -603,6 +625,10 @@ text-align: center;
   
   
 }
+
+.text-contact-info{
+    font-size: 20px;
+  }
 
 .icons-contact{
   font-size: 18px;
@@ -773,6 +799,7 @@ text-align: center;
   aspect-ratio: 16/9;
   display: block;
   border-radius: 10px;
+   margin-bottom: 30px;
 }
 
 /*MARK: footer
@@ -885,3 +912,618 @@ div .subtitle-follow{
   font-weight: 700;
   
 }
+
+.menu-burger{
+  display: none;
+}
+
+/* MARK: breakpoints
+*/
+
+@media screen and (max-width: 1200px) {
+  /* top bar */
+  .container{
+    max-width: 90%;
+  }
+  .icons-contact {
+   font-size: 16px;
+   width: 70%;
+  }
+
+  .icons-socia-media {
+    width: 30%;
+  }
+
+  div .subtitle-follow-top{
+
+  font-size: 16px;
+}
+
+/* header */
+.logo{
+  padding: 28px;
+  width: 140px;
+}
+
+
+
+.nav li {
+  font-size: 18px;
+}
+
+/* banner */
+.banner-texto h1 {
+    font-size: 60px;
+   
+    line-height: 80px;
+}
+
+/* working process*/
+.working-process-item {
+    padding: 10px;
+    margin: 20px;
+   
+}
+
+/* about us */
+.container-highlights{
+  --gap-col: 20px;
+  gap: 18px var(--gap-col);
+}
+
+  .highlights-item{
+    flex-basis: 100%;
+    padding: 10px;
+  }
+
+  .title{
+    font-size: 45px;
+  }
+  .parrafo-about-texto{
+    margin: 15px 0px;
+  }
+  /* services */
+  .title-service{
+    font-size: 45px;
+  }
+
+  .container-services {
+    padding: 30px 0px;
+  }
+
+  /* Our team */
+  .title-our-team{
+    font-size: 45px;
+    padding: 10px;
+  }
+
+  .btn-share{
+    left: 75%;
+    bottom: 83px;
+  }
+
+  /* Our benefits*/
+
+  .btn-about{
+    padding: 15px 25px;
+  }
+
+  .title-our-benefits{
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .highlights-item {
+        display: none;
+  }
+
+  /* our projects */
+  .title-our-projects{
+    font-size: 45px;
+  }
+
+  /*  recomendation */
+  .text-recomendation{
+    font-size: 2.5em;
+  }
+
+  .text-contact-info{
+    font-size: 16px;
+  }
+
+  /* location*/
+
+  .title-map{
+    font-size: 45px;
+  }
+
+  /* videos promocionales */
+  .title-promo {
+    font-size: 45px;
+  }
+}
+
+ @media screen and (max-width:992px) {
+  /* top bar */
+  .container{
+    max-width: 90%;
+  }
+
+
+
+  .icons-contact {
+   font-size: 12px;
+   width: 75%;
+  }
+  
+  div .subtitle-follow-top {
+        font-size: 12px;
+        
+ }
+  .icons-socia-media {
+    width: 25%;
+    gap: 10px;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  /* header*/
+
+  .logo{
+    width: 120px;
+  }
+  .nav li {
+    font-size: 14px;
+  }
+
+  
+ .btn-nav{
+  font-size: 14px;
+ }
+
+ /* banner */
+
+ .banner-texto{
+  padding: 100px;
+ }
+ .banner-texto h3 {
+    font-size: 17px;
+ }
+
+ .banner-texto h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+  /* working process */
+  .title{
+    font-size: 35px;
+  }
+
+  .title-working-item{
+    font-size: 20px;
+  }
+  .parrafo-working-item{
+    font-size: 12px;
+  }
+  /*About us*/
+
+  #about{
+    display: block;
+  }
+
+  .container-about{
+    width: 100%;
+  }
+
+  .about-texto{
+    width: 100%;
+   
+  }
+
+  .about-texto .subtitle{
+    padding: 0;
+  }
+
+  .highlights-item{
+    display: flex;
+  }
+
+  /* Our services */
+  .title-service-item {
+    font-size: 23px;
+    padding: 10px;
+  }
+  /* Our team */
+
+  
+
+  .col-20, .col-25{
+    flex-basis:33%;
+    max-width: 33%;
+  }
+
+  /* Our benefits */
+  #our-benefits{
+    flex-direction: column;
+
+  }
+
+  .container-benefits{
+    width: 100%;
+  }
+
+  .box-img-benefits{
+    width: 550px;
+    margin-block: 45px;
+  }
+
+  .about-texto{
+    padding-top: 25px;
+  }
+  .parrafo-about-texto {
+        margin: 35px 0px;
+    }
+  .btn-banner{
+    padding: 14px 20px;
+  }
+
+  /* Our projects */
+  .title-our-projects{
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .btn-about{
+    padding: 8px 25px;
+  }
+
+  /* Recomentation */
+  .text-recomendation {
+    font-size: 2em;
+  }
+
+  /* Contact*/
+
+  .title-contact{
+    font-size: 45px;
+  }
+.container-contact{
+  flex-direction: column-reverse;
+}
+
+.contact-info{
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  align-items: start;
+  gap: 20px;
+}
+
+.form-contact{
+  width: 100%;
+}
+
+/*location*/
+  .title-map{
+    font-size: 45px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  /* videos prootion*/
+   .title-promo{
+    padding: 0;
+    padding-bottom: 20px;
+   }
+ }
+
+@media screen and (max-width: 768px) {
+  /*top bar*/
+  .icons-contact{
+    width: 100%;
+  }
+
+  .icons-socia-media{
+    display: none;
+  }
+
+
+  /*nav*/
+  .menu-burger{
+  display: block;
+}
+  .nav{
+    display: none;
+    flex-direction:  column;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: var(--color-secundario);
+    width: 100%;
+  }
+
+  .nav li:hover{
+    background-color: var(--color-principal);
+  }
+
+  
+
+  .ocultar{
+    display: none;
+  }
+
+  
+  .nav.active{
+    display: flex;
+  }
+
+  .logo{
+    padding: 10px;
+  }
+
+  .container-header{
+    justify-content: space-between;
+  }
+
+  .icon-menu{
+    color: var(--color-principal);
+    font-size: 22px;
+  }
+
+  /* banner */
+      .banner-texto {
+        padding: 60px;
+    }
+  .banner-texto h1 {
+        font-size: 38px;
+        line-height: 60px;
+    }
+  
+    .container-working-process{
+      flex-wrap: wrap;
+    }
+  .working-process-item{
+    margin: 15px;
+  }
+
+  /* About us */
+  .container-about{
+    padding: 10px;
+  }
+
+  /* Our services */
+  .container-services{
+    flex-wrap: wrap;
+  }
+
+  .services-item{
+    width: 50%;
+  }
+
+  /* Our team */
+
+      .btn-share {
+        left: 79%;
+        bottom: 120px;
+    }
+
+  /* contact */
+
+  .contact-info{
+    padding: 0;
+    padding-top: 20px;
+  }
+      .text-contact-info
+ {
+        font-size: 11px;
+       
+    }
+  
+    /* Promotions */
+
+    .container-promo{
+      flex-wrap: wrap;
+    }
+    .col-50{
+            flex-basis: 100%;
+            max-width: 100%;
+        
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+  /* top bar */
+
+  #top-bar {
+    display: none;
+  }
+
+
+  /* header */
+  .logo {
+    padding: 8px;
+  }
+
+  .nav li {
+    font-size: 12px;
+  }
+
+  .btn-nav {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  /* banner */
+  .banner-texto h3 {
+        font-size: 10px;
+    }
+  .banner-texto {
+    padding: 35px;
+  }
+   .banner-texto h1 {
+        font-size: 27px;
+        line-height: 47px;
+    }
+  /* working process */
+  .subtitle {
+    padding-top: 30px;
+  }
+  .title {
+        font-size: 30px;
+    }
+  /* about us */
+  .box-img-about {
+    width: 330px;
+    height: 330px;
+    
+}
+
+.about-texto{
+  padding: 33px;
+}
+
+/* Our services */
+  .container-services {
+    padding: 20px 0px;
+  }
+
+  .services-item {
+    width: 100%;
+  }
+
+  /* Our team */
+  .col-20, .col-25, .col-33{
+    flex-basis:100%;
+    max-width: 100%;
+  }
+
+  /* Our benefits */
+  .container-benefits{
+    width: 100%;
+  }
+
+  .box-img-benefits{
+    width: 300px;
+    margin-block: 30px;
+  }
+
+  /* Our services*/
+  
+  .projects-item {
+    width: calc(50% - 20px);
+    margin:10px;
+}
+
+.title-service {
+        font-size: 30px;
+    }
+
+  /* Our Team */
+      .title-our-team {
+        font-size: 32px;
+        padding: 5px;
+    }
+
+  /* benefits */
+
+  .container-benefits{
+    display: none;
+  }
+
+      .title-our-benefits {
+        font-size: 32px;
+        padding: 5px;
+        
+    }
+  
+  .container-btns {
+    
+    display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.highlights-item{
+  display: none;
+}
+
+.btn-banner {
+        padding: 20px 18px;
+    }
+
+    /* Our projects */
+
+    .title-our-projects{
+      font-size: 31px;
+    }
+
+        .projects-item {
+        width: 80%;
+        
+    }
+
+  /* recoemendation */
+  .text-recomendation {
+        font-size: 1.5em;
+        line-height: 2;
+    }
+
+  /* contact */
+
+  .title-contact {
+        font-size: 37px;
+    }
+
+  .container-contact{
+    padding: 0px;
+  }
+
+  .text-condiciones{
+    font-size: 12px;
+  }
+
+  .contact-info{
+    display: none;
+  }
+
+  /* location */
+  .title-map {
+        font-size: 32px;
+    }
+  /* videos promocionales */
+  .title-promo {
+        font-size: 32px;
+    }
+  .container-promo {
+    padding: 20px 0;
+  }
+
+  /* footer */
+  #footer{
+    text-align: center;
+  }
+
+  .scroll-up{
+    right: 3px;
+  }
+
+  .nav.active{
+    display: flex;
+  }
+
+}
+  
+
+
+
+
+
+
+
+  
